@@ -5,50 +5,349 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>landing-page</title>
+    <link rel="stylesheet" href="./src/libs/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="./src/libs/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./src/libs/slick-slider/slick.css">
     <link rel="stylesheet" href="./src/css/style.css">
 </head>
+
 <body>
-<header class="header">
-    <div class="container">
-<div class="header__content">
-    <a class="logo" href="#">
-        <img class="logo__link" src="./src/image/header/logo.svg" alt="logotype">
-    </a>
-    <nav class="nav">
-        <ul class="nav__list">
-            <li class="nav__item"><a class="nav__link-link" href="#" >о нас</a></li>
-            <li class="nav__item"><a class="nav__link-link" href="#" >автопарк</a></li>
-            <li class="nav__item"><a class="nav__link-link" href="#" >отзывы</a></li>
-            <li class="nav__item"><a class="nav__link-link" href="#" >условия</a></li>
-            <li class="nav__item"><a class="nav__link-link" href="#" >контакты</a></li>
-        </ul>
-    </nav>
-    <a class="header__phone" href="tel:996558789777" >+ 996 (558) 789-777 </a>
-</div>
-    </div>
-</header>
-<main>
-    <section class="about-us">
-    <div class="container">
-        <div class="about-us__content">
-            <div class="about-us__info">
-                <h1 class="about-us__title">Каршеринг в Кыргызстане 
-                    LUX автомобили </h1>
-                    <p class="about-us__subtitle">Закажи эксклюзивный автомобиль через мобильное приложение в любой точке города</p>
-                    <a class="about-us__btn" href="#">Скачать приложение</a>
-            </div>
-            <div class="about-us__slider">
-                
+    
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <a class="logo" href="#">
+                    <img class="logo__link" src="./src/image/header/logo.svg" alt="logotype">
+                </a>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a class="nav__link-link" href="#">о нас</a></li>
+                        <li class="nav__item"><a class="nav__link-link" href="#">автопарк</a></li>
+                        <li class="nav__item"><a class="nav__link-link" href="#">отзывы</a></li>
+                        <li class="nav__item"><a class="nav__link-link" href="#">условия</a></li>
+                        <li class="nav__item"><a class="nav__link-link" href="#">контакты</a></li>
+                    </ul>
+                </nav>
+                <a class="header__phone" href="tel:996558789777">+ 996 (558) 789-777 </a>
             </div>
         </div>
-    </div>
-    </section>
-    <section></section>
-    <section></section>
-</main>
-<footer></footer>
+    </header>
+    <main>
+        <section class="about-us">
+            <div class="container">
+                <div class="about-us__top">
+                    <div class="about-us__content">
+                        <h1 class="about-us__title">Каршеринг в Кыргызстане
+                            LUX автомобили </h1>
+                        <p class="about-us__subtitle">Закажи эксклюзивный автомобиль через мобильное приложение в любой
+                            точке города</p>
+                        <a class="about-us__btn" href="#">Скачать приложение</a>
+                    </div>
+                    <div class="about-us__slider">
+                        <div class="about-us__slider-item">
+                            <img class="about-us__slider-images" src="./src/image/about/Rectangle 7.png" alt="car">
+                            <p class="about-us__slider-text">
+                                4 сом/мин 5 мест 10 тыс. км пробег
+                            </p>
+                        </div>
+                        <div class="about-us__slider-item">
+                            <img class="about-us__slider-images" src="./src/image/about/Rectangle 22.png" alt="car">
+                            <p class="about-us__slider-text">
+                                4 сом/мин 5 мест 20 тыс. км пробег
+                            </p>
+                        </div>
+                        <div class="about-us__slider-item">
+                            <img class="about-us__slider-images" src="./src/image/about/Rectangle 7.png" alt="car">
+                            <p class="about-us__slider-text">
+                                4 сом/мин 5 мест 30 тыс. км пробег
+                            </p>
+                        </div>
+                        <div class="about-us__slider-item">
+                            <img class="about-us__slider-images" src="./src/image/about/Rectangle 22.png" alt="car">
+                            <p class="about-us__slider-text">
+                                4 сом/мин 5 мест 40 тыс. км пробег
+                            </p>
+                        </div>
+                        <div class="about-us__slider-item">
+                            <img class="about-us__slider-images" src="./src/image/about/Rectangle 7.png" alt="car">
+                            <p class="about-us__slider-text">
+                                4 сом/мин 5 мест 50 тыс. км пробег
+                            </p>
+                        </div>
+                        <div class="about-us__slider-item">
+                            <img class="about-us__slider-images" src="./src/image/about/Rectangle 22.png" alt="car">
+                            <p class="about-us__slider-text">
+                                4 сом/мин 5 мест 60 тыс. км пробег
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-us__bottom">
+                    <div class="about-us__items">
+                        <div class="about-us__item">
+                            <img class="about-us__item-img" src="./src/image/about/surface1.svg" alt="car">
+                            <p class="about-us__item-text">Более 300 автомобилей
+                                в вашем распоряжении
+                            </p>
+                        </div>
+                        <div class="about-us__item">
+                            <img class="about-us__item-img" src="./src/image/about/card.svg" alt="hand">
+                            <p class="about-us__item-text">Дешевле такси
+                                и собственного автомобиля
+                            </p>
+                        </div>
+                        <div class="about-us__item">
+                            <img class="about-us__item-img" src="./src/image/about/map.svg" alt="map">
+                            <p class="about-us__item-text">Лучшие автомобили в любой точке города
+                            </p>
+                        </div>
+                    </div>
+                    <div class="about-us__links">
+                        <a class="about-us__link" href="#">Условия аренды автомобиля </a>
+                        <a class="about-us__link" href="#">Публичный договор</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="rent">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="wrapper">
+                            <h2 class="wrapper__title">Условия аренды автомобиля</h2>
+                            <p class="wrapper__subtitle">Мы ценим каждого клиента и предоставляем качественный сервис
+                                каршеринга в Кыргызстане.
+                            </p>
+                            <p class="wrapper__descr">Именно для того, что бы Вам было приятно и безопасно пользоваться
+                                нашим сервисом на постоянной основе, мы выделили несколько условий для того, чтобы взять
+                                машину в аренду</p>
+                            <a class="wrapper__btn" href="#">Скачать приложение</a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="wrapper">
+                            <div class="wrapper__num">01</div>
+                            <h3 class="wrapper__title-text">Опыт вождения
+                                от 2х лет
+                            </h3>
+                            <p class="wrapper__subtitle-text">Для того, чтобы арендовать автомобиль, Вам необходимо
+                                зарегестрировать свои прав в нашем мобильном приложении
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="wrapper">
+                            <div class="wrapper__num">02</div>
+                            <h3 class="wrapper__title-text">Только по Кыргызстану
+
+                            </h3>
+                            <p class="wrapper__subtitle-text">Наши автомобили работают только в пределах города
+                                Кыргызстан.
+                                За город на наших автомобилях, к сожалению, выезжать нельзя.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="wrapper">
+                            <div class="wrapper__num">03</div>
+                            <h3 class="wrapper__title-text">Мобильный телефон и интернет
+                            </h3>
+                            <p class="wrapper__subtitle-text">Для использования нашего сервиса Вам необходим мобильный
+                                телефон и интернет.
+                                Бронирование, оплата и вся отчетность происходит онлайн
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="advantages">
+            <div class="container">
+                <h3 class="advantages__title">Преимущества</h3>
+                <div class="row">
+                    <div class="col">
+                        <div class="wrapper">
+                            <ul class="wrapper__list">
+                                <li class="wrapper__list-item">мойка авто каждую неделю
+                                </li>
+                                <li class="wrapper__list-item">премиум автомобили
+                                </li>
+                                <li class="wrapper__list-item">мощный двигатель
+                                </li>
+                                <li class="wrapper__list-item">поддержка 24/7
+                                </li>
+                                <li class="wrapper__list-item">бензин за наш счет
+                                </li>
+                                <li class="wrapper__list-item">парковка по всему городу
+                                </li>
+                                <li class="wrapper__list-item">каждый месяц ТО автомобиля</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="wrapper">
+                            <img class="wrapper__images" src="./src/image/advantages/Rectangle 22.png" alt="car">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="wrapper">
+                            <div class="wrapper__content">
+                                <p class="wrapper__subtitle">Вы можете выбрать один из 300 наших автомобилей,
+                                    насладиться
+                                    сервисом, повысить уровень жизни, не покупая дорогой автомобиль, успевать везде и
+                                    каждый
+                                    день ездить на новом премиум автомобиле.
+                                </p>
+                                <p class="wrapper__descr">Посмотрите видео презентацию нашего сервиса и выберите
+                                    автомобиль
+                                    уже сейчас!</p>
+                                <a class="wrapper__video" data-fancybox
+                                    href="https://www.youtube.com/watch?v=_sI_Ps7JSEk">
+                                    посмотреть<br> презентацию
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="reviews">
+            <div class="container">
+                <h3 class="reviews__title">Отзывы</h3>
+
+                <div class="reviews__slider">
+                    <div class="reviews__item">
+                        <div class="reviews__item-content">
+                            <p class="reviews__item-subtitle">Михаил, 28 лет
+                            </p>
+                            <p class="reviews__item-descr">Очень рад, что Вы есть!
+                                Пока еще бэху купить не могу, но покататься взять - это отличная возможность!
+                                Такое ощущение, что у меня личный огромный автопарк элитных тачек)))
+                            </p>
+                        </div>
+                    </div>
+                    <div class="reviews__item">
+                        <div class="reviews__item-content">
+                            <p class="reviews__item-subtitle">Ганди, 30 лет
+                            </p>
+                            <p class="reviews__item-descr">Очень радует Ваш сервис. Встречаю ВИП клиентов всегда только
+                                на
+                                Ваших машинах.
+                                Удобно, что расчет по минутам, это экономит бюджет компании.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="reviews__item">
+                        <div class="reviews__item-content">
+                            <p class="reviews__item-subtitle">Мануа, 38 лет
+                            </p>
+                            <p class="reviews__item-descr">Люблю Ваш сервис. Не люблю такси. В приложении быстро нахожу
+                                машину поблизости. Всегда чистая, свежая, приятно садиться в нее. До работы или на
+                                шопинг еду с комфортом. </p>
+                        </div>
+                    </div>
+                    <div class="reviews__item">
+                        <div class="reviews__item-content">
+                            <p class="reviews__item-subtitle">Жандос, 18 лет
+                            </p>
+                            <p class="reviews__item-descr">Ребята, Вы ТОПЧИК!
+                                Брал машину на свидание, покатал девушку, она в восторге, я доволен, все счастливы)
+                            </p>
+                        </div>
+                    </div>
+                    <div class="reviews__item">
+                        <div class="reviews__item-content">
+                            <p class="reviews__item-subtitle">Контимир, 23 лет
+                            </p>
+                            <p class="reviews__item-descr">Люблю Ваш сервис. Не люблю такси. В приложении быстро нахожу
+                                машину поблизости. Всегда чистая, свежая, приятно садиться в нее. До работы или на
+                                шопинг еду с комфортом. </p>
+                        </div>
+                    </div>
+                    <div class="reviews__item">
+                        <div class="reviews__item-content">
+                            <p class="reviews__item-subtitle">Лямистер, 34 лет
+                            </p>
+                            <p class="reviews__item-descr">Ребята, Вы ТОПЧИК!
+                                Брал машину на свидание, покатал девушку, она в восторге, я доволен, все счастливы)
+                            </p>
+                        </div>
+                    </div>
+                    <div class="reviews__item">
+                        <div class="reviews__item-content">
+                            <p class="reviews__item-subtitle">Дантосжон, 50 лет
+                            </p>
+                            <p class="reviews__item-descr">Очень радует Ваш сервис. Встречаю ВИП клиентов всегда только
+                                на
+                                Ваших машинах.
+                                Удобно, что расчет по минутам, это экономит бюджет компании.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="request">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="wrapper">
+                            <img src="./src/image/request/Rectangle 35.png" alt="car-girl">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="wrapper">
+                            <h3 class="wrapper__title">Остались вопросы?
+                            </h3>
+                            <p class="wrapper__subtitle">Мы перезвоним Вам и проконсультируем по любому вопросу</p>
+                            <form action="" class="wrapper__form">
+                                <input class="wrapper__input" type="text" placeholder="Имя">
+                                <input class="wrapper__input" type="text" placeholder="Телефон">
+                            </form>
+                            <button class="wrapper__btn" type="submit">Оставить заявку</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <a class="footer__btn" href="#">Скачать приложение</a>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a class="nav__link-link" href="#">о нас</a></li>
+                        <li class="nav__item"><a class="nav__link-link" href="#">автопарк</a></li>
+                        <li class="nav__item"><a class="nav__link-link" href="#">отзывы</a></li>
+                        <li class="nav__item"><a class="nav__link-link" href="#">условия</a></li>
+                        <li class="nav__item"><a class="nav__link-link" href="#">контакты</a></li>
+                    </ul>
+                </nav>
+                <a class="footer__phone" href="tel:996558789777">+ 996 (558) 789-777 </a>
+            </div>
+            <ul class="footer__social">
+                <li class="footer__social-item">
+                    <a href="#" class="footer__social-link">
+                        <i class="fab fa-facebook"></i>
+                    </a></li>
+                <li class="footer__social-item">
+                    <a href="#" class="footer__social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a></li>
+                <li class="footer__social-item">
+                    <a href="#" class="footer__social-link">
+                        <i class="fab fa-youtube"></i>
+                    </a></li>
+            </ul>
+        </div>
+
+    </footer>
 
     <script src="./src/libs/jquery/jquery.min.js"></script>
+    <script src="./src/libs/fancybox/jquery.fancybox.min.js"></script>
+    <script src="./src/libs/slick-slider/slick.min.js"></script>
     <script src="./src/libs/mdb-ui-kit/js/mdb.min.js"></script>
     <script src="./src/js/main.js"></script>
 </body>

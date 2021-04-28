@@ -1,5 +1,6 @@
-.header {
+.footer {
     width:1400px;
+    height: 200px;
     background: #332208;
     margin: 0 auto;
     &__content {
@@ -7,6 +8,35 @@
         justify-content: space-between;
         align-items: center;
         height: 100px;
+        padding-top: 100px;
+    }
+    &__btn {
+        text-transform: uppercase;
+        color: #fff;
+        padding: 16px 19px;
+        background: #C5AC2D;
+        border: 1px solid transparent;
+        transition: all .5s;
+
+        &:hover {
+            color: #C5AC2D;
+            background: #fff;
+            border: 1px solid #C5AC2D;
+        }
+    }
+    &__social{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 50px;
+        list-style: none;
+    }
+    &__social-item{
+        margin-left: 15px;
+        
+    }
+    .fab{
+        color: #C5AC2D;
     }
     .nav {
         
